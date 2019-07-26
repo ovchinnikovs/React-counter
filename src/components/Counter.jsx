@@ -38,10 +38,12 @@ export default class Counter extends Component {
     return (
       <>
         <h1>{isVisible ? counter : null}</h1>
+        <div className="buttons">
         <button onClick={this.plusCount}>+</button>
         <button onClick={this.minusCount}>-</button>
-        <button onClick={this.handleToggleCounter}>{isVisible ? "hide" : "show"}</button>
-        {isVisible && counter === 10 ? <p>Ura</p> : null}
+        <button onClick={this.handleToggleCounter}>{isVisible ? "Hide" : "Show"}</button>
+        </div>
+        <p>{isVisible && counter === 10 ? "Ты красавчик" : null}</p>
       </>
     )
   }
