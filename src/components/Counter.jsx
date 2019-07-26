@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import "./Counter.css"
+import Button from './Button'
+import Message from './Message';
 
 export default class Counter extends Component {
 
@@ -39,11 +41,13 @@ export default class Counter extends Component {
       <>
         <h1>{isVisible ? counter : null}</h1>
         <div className="buttons">
-        <button onClick={this.plusCount}>+</button>
-        <button onClick={this.minusCount}>-</button>
-        <button onClick={this.handleToggleCounter}>{isVisible ? "Hide" : "Show"}</button>
+        <Button title='+' onClick={this.plusCount} />
+        <Button title='-' onClick={this.minusCount} />
+        <Button title={isVisible ? "Hide" : "Show"} onClick={this.handleToggleCounter} />
         </div>
-        <p>{isVisible && counter === 10 ? "Ты красавчик" : null}</p>
+        <Message title={isVisible && counter === 10 ? "Ты красавчик" : null} />
+        
+
       </>
     )
   }

@@ -34,3 +34,7 @@ button:focus {
 p {
   height: 35px;
 }
+
+.image {
+  width: 200px;
+}
