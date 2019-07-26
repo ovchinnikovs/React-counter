@@ -1,4 +1,4 @@
 
-Counter Upp
+Counter App
 
-[preview](https://ovchinnikovs.github.io/React-counter/)
+[PREVIEW LINK](https://ovchinnikovs.github.io/React-counter/)
